@@ -4,7 +4,7 @@
   <div class="card-body">
      <%= link_to t.description, todo_path(t) %>
      <%= link_to "Editar", todo_edit_path(t) %>
-     <%= link_to "Borrar", todo, method: :delete %>
+     <%= link_to "Borrar", t, method: :delete %>
    </div>
 <% end %>
 
