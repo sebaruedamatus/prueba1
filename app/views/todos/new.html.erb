@@ -1,0 +1,11 @@
+<h1>ToDo</h1>
+<p>Lorem Ipsum</p>
+
+<%= form_with(model: @todo, local: true) do |t| %>
+
+    <%= t.label :descrption %><br>
+    <%= t.text_area :description %><br>
+    <br>
+
+ <%= t.submit "Crear ToDo" %>
+<% end %>

@@ -1,0 +1,8 @@
+<%= form_with model: @todo, local: true do |t| %>
+
+    <%= t.label :description %><br>
+    <%= t.text_area :description %><br>
+    <br>
+
+ <%= t.submit "Editar ToDo" %>
+<% end %>

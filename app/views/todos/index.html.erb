@@ -1,0 +1,11 @@
+
+
+<% @todos.each do |t| %>
+  <div class="card-body">
+     <%= link_to t.description, todo_path(t) %>
+     <%= link_to "Editar", todo_edit_path(t) %>
+     <%= link_to "Borrar", todo, method: :delete %>
+   </div>
+<% end %>
+
+<%= link_to "Crear ToDo", todos_new_path %>
